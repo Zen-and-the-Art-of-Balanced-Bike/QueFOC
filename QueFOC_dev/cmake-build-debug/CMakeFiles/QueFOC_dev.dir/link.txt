@@ -1,0 +1,3 @@
+"S:\Program Files\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\QueFOC_dev.dir/objects.a
+S:\App\mingw64\bin\ar.exe cr CMakeFiles\QueFOC_dev.dir/objects.a @CMakeFiles\QueFOC_dev.dir\objects1.rsp
+S:\App\mingw64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\QueFOC_dev.dir/objects.a -Wl,--no-whole-archive  -o QueFOC_dev.exe -Wl,--out-implib,libQueFOC_dev.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\QueFOC_dev.dir\linklibs.rsp

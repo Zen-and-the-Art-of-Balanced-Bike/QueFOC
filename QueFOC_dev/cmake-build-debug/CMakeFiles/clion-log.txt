@@ -1,0 +1,4 @@
+"S:\Program Files\CLion 2020.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" S:\EE\SmartCar\BLDC\code\QueFOC\QueFOC_dev
+-- Configuring done
+-- Generating done
+-- Build files have been written to: S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug

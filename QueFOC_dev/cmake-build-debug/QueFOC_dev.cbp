@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="QueFOC_dev"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QueFOC_dev">
+				<Option output="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/QueFOC_dev.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="S:/App/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="S:/App/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="S:/App/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 QueFOC_dev"/>
+					<CompileFile command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QueFOC_dev/fast">
+				<Option output="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/QueFOC_dev.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="S:/App/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="S:/App/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="S:/App/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 QueFOC_dev/fast"/>
+					<CompileFile command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="S:/App/mingw64/bin/mingw32-make.exe -f &quot;S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/adc_sensor.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/adc_sensor.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/comm.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/comm.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/encoder.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/encoder.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/fast_math.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/fast_math.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/filter.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/filter.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/foc.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/foc.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/motor.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/motor.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/pid.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/pid.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/pwm.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/pwm.h">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/test.c">
+			<Option target="QueFOC_dev"/>
+		</Unit>
+		<Unit filename="S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

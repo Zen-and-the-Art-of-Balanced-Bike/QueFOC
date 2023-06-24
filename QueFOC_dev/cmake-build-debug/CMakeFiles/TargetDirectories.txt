@@ -1,0 +1,3 @@
+S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/CMakeFiles/QueFOC_dev.dir
+S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/CMakeFiles/edit_cache.dir
+S:/EE/SmartCar/BLDC/code/QueFOC/QueFOC_dev/cmake-build-debug/CMakeFiles/rebuild_cache.dir
