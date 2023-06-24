@@ -1,7 +1,7 @@
-./QueFOC_dev/.idea
+/QueFOC_dev/.idea
 
-./QueFOC_dev/cmake-build-debug
+/QueFOC_dev/cmake-build-debug
 
-./QueFOC_CH32V307/.idea
+/QueFOC_CH32V307/.idea
 
-./QueFOC_CH32V307/.obj
+/QueFOC_CH32V307/obj
