@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/QueFOC_CH32V307/User",
+                "${workspaceFolder}/QueFOC_CH32V307/Hardware",
+                "${workspaceFolder}/QueFOC_CH32V307/3rdparty",
+                "${workspaceFolder}/QueFOC_CH32V307/Core",
+                "${workspaceFolder}/QueFOC_CH32V307/Peripheral/inc",
+                "${workspaceFolder}/QueFOC_dev"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        }
+    ],
+    "version": 4
+}
