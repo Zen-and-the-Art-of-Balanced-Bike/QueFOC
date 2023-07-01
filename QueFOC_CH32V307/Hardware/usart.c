@@ -83,23 +83,24 @@ void rec_data_package_float(const uint8_t rec, void (*callback)(float)){
     static uint8_t is_big_end = 0;
     static uint8_t rec_pre = 0;
     static uint8_t frame_index = 0;
-    // [frame start]    [frame data]    [next frame]
-    // 0    1           2345            6       7
-    // 0xeb 0x90        XXXX            0xeb    0x90
+    //printf("data=%x,index=%d\n", rec,frame_index);
+    // [frame start]    [frame data]    [next frame start]  ...
+    // 0    1           2345            0       1           ...
+    // 0xeb 0x90        XXXX            0xeb    0x90        ...
+    if(frame_index>1&&frame_index<6){
+        i2f.i8[(is_big_end?(frame_index-2):(3-(frame_index-2)))] = rec;
+        if(frame_index==5) callback(i2f.f);
+    }
+
     if(rec==0x90&&rec_pre==0xeb){
-        if(frame_index==7) callback(i2f.f);
         is_big_end = 0;
-        frame_index = 2;
+        frame_index = 1;
     }
     else if(rec==0xeb&&rec_pre==0x90){
-        if(frame_index==7) callback(i2f.f);
         is_big_end = 1;
-        frame_index = 2;
+        frame_index = 1;
     }
-    if(frame_index<4){
-        i2f.i8[(is_big_end?(frame_index-2):(3-(frame_index-2)))] = rec;
-        // printf("data=%x,index=%d\n", rec,frame_index-1);
-    }
+    
     frame_index += 1;
     rec_pre = rec;
 }

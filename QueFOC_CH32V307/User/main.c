@@ -25,8 +25,9 @@ void hardware_encoder_boot(){
 }
 
 void hardware_uart4_callback(float data){
-    motorQ.vel_input = data;
-//    monitor_prt(&monitor, "cmd.vel=%.7f\n", data);
+	if(data<100&&data>-100)
+    	motorQ.vel_input = data;
+    monitor_prt(&monitor, "cmd.vel=%.7f\n", data);
 }
 
 
