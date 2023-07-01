@@ -54,6 +54,7 @@ void hardware_uart4_send_u8(const u8 data){
     USART_SendData(UART4, data);
     /* waiting for sending finish */
     while(USART_GetFlagStatus(UART4, USART_FLAG_TXE) == RESET){}
+    hardware_delay_us(500);
 }
 
 void trans_data_package_float(const float data, void (*send)(uint8_t)){
@@ -81,21 +82,24 @@ void rec_data_package_float(const uint8_t rec, void (*callback)(float)){
     } i2f;
     static uint8_t is_big_end = 0;
     static uint8_t rec_pre = 0;
-    static uint8_t data_index = 4;
-    if(data_index==4){
-        if(rec==0x90&&rec_pre==0xeb){
-            is_big_end = 0;
-            data_index = 0;
-        }
-        else if(rec==0xeb&&rec_pre==0x90){
-            is_big_end = 1;
-            data_index = 0;
-        }
-        // printf("%x %x\n", rec, rec_pre);
-    }else{
-        i2f.i8[(is_big_end?(data_index++):(3-(data_index++)))] = rec;
-        // printf("data=%x,index=%d\n", rec,data_index-1);
-        if(data_index==4) callback(i2f.f);
+    static uint8_t frame_index = 0;
+    // [frame start]    [frame data]    [next frame]
+    // 0    1           2345            6       7
+    // 0xeb 0x90        XXXX            0xeb    0x90
+    if(rec==0x90&&rec_pre==0xeb){
+        if(frame_index==7) callback(i2f.f);
+        is_big_end = 0;
+        frame_index = 2;
     }
+    else if(rec==0xeb&&rec_pre==0x90){
+        if(frame_index==7) callback(i2f.f);
+        is_big_end = 1;
+        frame_index = 2;
+    }
+    if(frame_index<4){
+        i2f.i8[(is_big_end?(frame_index-2):(3-(frame_index-2)))] = rec;
+        // printf("data=%x,index=%d\n", rec,frame_index-1);
+    }
+    frame_index += 1;
     rec_pre = rec;
 }

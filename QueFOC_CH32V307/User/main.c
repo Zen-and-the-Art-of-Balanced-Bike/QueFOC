@@ -149,7 +149,6 @@ int main(void)
 //	        monitor_prt(&monitor, "%.3f,%.3f,%.3f,%.3f\n", motorQ.i_q, debug_id_set, motorQ.encoder->vel, motorQ.encoder->pos);
 //	        monitor_prt(&monitor, "%.3f,%.3f\n", motorQ.encoder->vel, motorQ.i_q_set);
 //	        monitor_prt(&monitor, "%.3f,%.3f,%.3f,%.3f\n", motorQ.i_q, motorQ.i_q_set, motorQ.encoder->vel, motorQ.vel_input);
-	        hardware_delay_ms(5);
 
 
 	    }else {
