@@ -46,7 +46,7 @@
 
 
 /* User configuration */
-#define KV                          500
+#define KV                          400
 #define POLE_PAIRS                  7
 #define INERTIA                     0
 #define CPR                         (1<<14)
@@ -55,9 +55,9 @@
 #define SHUNT_RESISTANCE            0.001f
 #define I_OP_AMP_OFFSET             1.65f
 #define I_OP_AMP_GAIN               30.0f
-#define CALIB_CURRENT               1.0f
+#define CALIB_CURRENT               2.0f
 #define CALIB_VOLTAGE               1.0f
-#define I_MAX                       10.0f
+#define I_MAX                       15.0f
 // FIXME
 // IR2136 290ns
 #define DEAD_TIME_NS                0

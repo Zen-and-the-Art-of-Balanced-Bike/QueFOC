@@ -341,10 +341,12 @@ void motor_loop_run(Motor* motor){
             break;
         case MS_RUN_VELOCITY:
         {
-            float delta_vel = motor->vel_input - motor->vel_sp;
-            // T = a * J
-            motor->torque_sp = (delta_vel / motor->adc->measure_period) * motor->inertia;
-            motor->vel_sp += delta_vel;
+            motor->torque_sp = 0;
+            // float delta_vel = motor->vel_input - motor->vel_sp;
+            // // T = a * J
+            // motor->torque_sp = (delta_vel / motor->adc->measure_period) * motor->inertia;
+            // motor->vel_sp += delta_vel;
+            motor->vel_sp  = motor->vel_input;
         }
             break;
         default:

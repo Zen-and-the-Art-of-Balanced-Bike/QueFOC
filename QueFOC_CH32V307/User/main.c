@@ -59,7 +59,7 @@ int main(void)
 	        hardware_pwm_boot,
 	        hardware_set_pwm_duty_ch_a, hardware_set_pwm_duty_ch_b, hardware_set_pwm_duty_ch_c);
 	cmder_init(&cmder,
-	        '\n', true,
+	        '\n', false,
 	        hardware_usart3_boot, hardware_usart3_send_str);
 	motor_init(&motorQ,
 	        'Q', KV, CALIB_CURRENT, CALIB_VOLTAGE,
@@ -100,7 +100,8 @@ int main(void)
     GPIO_SetBits(GPIOC, GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5);
     //GPIO_ResetBits(GPIOB, GPIO_Pin_12);
 
-    motor_update_vel_ctrl_param(&motorQ, 0.1, 0.01);
+    // 0.1 0.01 FOR BETTER VEL CTRL PERFORMANCE
+    motor_update_vel_ctrl_param(&motorQ, 0.05, 0.001);
     hardware_uart4_boot();
 
 //    OLED_Init();
@@ -131,7 +132,8 @@ int main(void)
 	        GPIO_SetBits(GPIOC, GPIO_Pin_12);
 	        trans_data_package_float(motorQ.encoder->vel, hardware_uart4_send_u8);
 
-//	        hardware_delay_ms(5);
+			// Faster
+	        hardware_delay_ms(1);
 
 //	        monitor_prt(&monitor, "%d %.3f %.3f %.3f\n", encoderQ.data_raw, (encoderQ.data_raw-encoderQ.offset)*1.0f*PIx2*7/16384, encoderQ.phase, encoderQ.phase*360/PIx2);
 
@@ -149,7 +151,8 @@ int main(void)
 
 //	        monitor_prt(&monitor, "%.3f,%.3f,%.3f,%.3f\n", motorQ.i_q, debug_id_set, motorQ.encoder->vel, motorQ.encoder->pos);
 //	        monitor_prt(&monitor, "%.3f,%.3f\n", motorQ.encoder->vel, motorQ.i_q_set);
-//	        monitor_prt(&monitor, "%.3f,%.3f,%.3f,%.3f\n", motorQ.i_q, motorQ.i_q_set, motorQ.encoder->vel, motorQ.vel_input);
+//	         monitor_prt(&monitor, "%.3f,%.3f,%.3f,%.3f,%.3f\n", motorQ.i_q, motorQ.i_q_set, motorQ.encoder->vel, motorQ.vel_input, motorQ.ctrl_vel_integral);
+//			 hardware_delay_ms(5);
 
 
 	    }else {

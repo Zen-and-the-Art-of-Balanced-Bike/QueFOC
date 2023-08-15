@@ -51,10 +51,13 @@ void hardware_usart3_send_str(const char* data){
 }
 
 void hardware_uart4_send_u8(const u8 data){
+    while(USART_GetFlagStatus(UART4, USART_FLAG_TXE) == RESET){}
     USART_SendData(UART4, data);
     /* waiting for sending finish */
     while(USART_GetFlagStatus(UART4, USART_FLAG_TXE) == RESET){}
-    hardware_delay_us(500);
+    // hardware_delay_us(500);
+    // faster
+     hardware_delay_us(20);
 }
 
 void trans_data_package_float(const float data, void (*send)(uint8_t)){
