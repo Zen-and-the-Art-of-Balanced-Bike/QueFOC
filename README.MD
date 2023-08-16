@@ -7,9 +7,9 @@
 - 有完整的终端命令调试系统
 - 提供完整的PCB工程文件（KICAD）
 
-[功率板](https://files.catbox.moe/oh9nwy.png)
-[控制板](https://files.catbox.moe/5zdesl.png)
-[测试](https://files.catbox.moe/clrkut.PNG)
+![功率板](https://files.catbox.moe/oh9nwy.png)
+![控制板](https://files.catbox.moe/5zdesl.png)
+![测试](https://files.catbox.moe/clrkut.PNG)
 
 ## 文件目录介绍
 
