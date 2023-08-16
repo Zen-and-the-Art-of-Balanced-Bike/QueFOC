@@ -1,6 +1,15 @@
 # QueFOC 无刷方案
 
-一套已经打板验证的FOC有感无刷方案，已实现电流环、速度环，采用PLL算法观测速度，有完整的终端命令调试系统
+- FOC有感无刷方案
+- 已打板验证
+- 已实现电流环、速度环
+- 采用PLL算法观测速度
+- 有完整的终端命令调试系统
+- 提供完整的PCB工程文件（KICAD）
+
+[功率板](https://files.catbox.moe/oh9nwy.png)
+[控制板](https://files.catbox.moe/5zdesl.png)
+[测试](https://files.catbox.moe/clrkut.PNG)
 
 ## 文件目录介绍
 
@@ -16,7 +25,15 @@ QueFOC_CH32V307/ # CH33V307单片机的工程目录
 
 ## 性能介绍
 
+### 综合
+使用此系统配合控制算法已实现K/N车平衡
+
+### 快速响应
 使用逐飞的N车黑色无刷电机测试，280ms从0 turn/s达到50 turn/s
+![](https://files.catbox.moe/00hey0.png)
+
+### 瞬间反转
+![](https://files.catbox.moe/bvumej.png)
 
 ## 移植说明
 
