@@ -1,4 +1,4 @@
-![](https://img1.imgtp.com/2023/10/20/ObFmAJ8X.png)
+![](https://img1.imgtp.com/2023/10/20/INi3kKRi.png)
 
 # QueFOC 无刷方案
 
