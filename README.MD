@@ -1,4 +1,4 @@
-![](https://picss.sunbangyan.cn/2023/10/20/d1a2fba430c6ce085f878d808f4de35e.png)
+![](https://img1.imgtp.com/2023/10/20/ObFmAJ8X.png)
 
 # QueFOC 无刷方案
 
