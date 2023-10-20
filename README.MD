@@ -1,3 +1,5 @@
+![](https://picss.sunbangyan.cn/2023/10/20/d1a2fba430c6ce085f878d808f4de35e.png)
+
 # QueFOC 无刷方案
 
 - FOC有感无刷方案
