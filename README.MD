@@ -29,6 +29,7 @@ QueFOC_CH32V307/ # CH33V307单片机的工程目录
 
 ### 综合
 使用此系统配合控制算法已实现K/N车平衡
+![](https://raw.githubusercontent.com/Zen-and-the-Art-of-Balanced-Bike/QueFOC/main/.github/workflows/balance.gif)
 
 ### 快速响应
 使用逐飞的N车黑色无刷电机测试，280ms从0 turn/s达到50 turn/s
